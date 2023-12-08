@@ -16,7 +16,6 @@ class SinglyLinkedList{
        if(this.length==0){
         this.head=node;
         this.tail=node;
-        this.length++;
        }
        else {
         let current=this.head;
@@ -25,8 +24,8 @@ class SinglyLinkedList{
         }
         this.tail=node
         current.next=node;
-        this.length++;
        }
+       this.length++;
     }
 }
 
