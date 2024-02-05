@@ -18,8 +18,7 @@ class Booking {
         let pnr = '';
 
         for (let i = 0; i < pnrLength; i++) {
-            const randomIndex = Math.floor(Math.random() * characters.length);
-            pnr += characters.charAt(randomIndex);
+            pnr += characters.charAt(Math.floor(Math.random() * characters.length));
         }
 
         return pnr;
